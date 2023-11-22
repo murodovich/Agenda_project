@@ -1,12 +1,13 @@
-﻿namespace Agenda_project.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Agenda_project.Entities
 {
     public class User
     {
+        [Key]
         public int Id { get; set; }
         public string FirstName { get; set; }
-        public string? LastName { get; set; }
-        public string? UserName { get; set; }
-        public int ChatId { get; set; } 
+        public long ChatId { get; set; } 
 
     }
 }
